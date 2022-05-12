@@ -5,32 +5,82 @@
         <script src="script.js"></script>
     </head>
 <body>
-    <div class="sticky_header">
-        <a class="a0" href="https://covid-19.ebscomedical.com/" target="_blank">COVID-19 Resources and Vaccination Information</a> 
-        <div class="sticky">
-            <img src="imgreplace.jpg" class="img_stickyheader">
-            <div class="topleftsticky">
-                <span class="a1">call us on:01-525011,01-525012 </span>
-                <button class="openBtn" onclick="openSearch()">🔍</button>
-            </div>
-            <div id="myOverlay" class="overlay">
-                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
-                <div class="overlay-content">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button class="search" type="submit">🔍</button>
-                </form>
-                </div>
-            </div>
-            <div class="theoptions">
-                <a class="links" href="about.html">About</a>
-                <a class="links" href="contact.html">Contact us</a>
-                <a class="links" href="docdetail.html">Doctor details</a>
-                <a class="links" href="pandv.html">Patient and visitor</a>
-                <a class="links" href="availableservices.html">Treatment and care</a>
+  <div class="sticky_header">
+    <a class="a0" href="https://covid-19.ebscomedical.com/" target="_blank">COVID-19 Resources and Vaccination Information</a> 
+    <div class="sticky">
+        <img src="imgreplace.jpg" class="img_stickyheader">
+        <div class="topleftsticky">
+            <span class="a1">call us on:01-525011,01-525012 </span>
+            <button class="openBtn" onclick="openSearch()">🔍</button>
+        </div>
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button class="search" type="submit">🔍</button>
+            </form>
             </div>
         </div>
-    </div>
+        <div class="theoptions">
+            <div class="dropdown">
+            <a class="link" href="about.html">About</a>
+            <div class="dropdown-content">
+                <a class="link" href="#">Programs</a>
+                <a class="link" href="#">Awards and Accreditions</a>
+                <a class="link" href="#">Affiliated hospitals</a>
+                <a class="link" href="#">Our services</a>
+                <a class="link" href="#">Our missions and visons</a>
+                <a class="link" href="#">Why choose us</a>
+              </div></div>
+            
+                <div class="dropdown">
+            <a class="link" href="docdetail.html">Doctor details</a>
+            <div class="dropdown-content">
+                <a class="link" href="#">How to choose a doctor</a>
+                <a class="link" href="#">Our Doctors</a>
+                <a class="link" href="#">Consult Professionals</a>
+            </div>
+            </div>
+            <div class="dropdownc">
+                <a class="link" href="availableservices.html">Treatment and care</a>
+                <div class="dropdown-contentc">
+                    <span><a class="link" href="#">Cancer</a>
+                    <a class="link" href="#">Maternity</a>
+                    <a class="link" href="#">Heart-related</a>
+                    <a class="link" href="#">Men's health</a></span>
+                   <span><a class="link" href="#">Women's health </a>
+                    <a class="link" href="#">Mental healthcare</a>
+                    <a class="link" href="#">Pediatrician</a>
+                    <a class="link" href="#">Orthopedic</a></span>
+                    <span><a class="link" href="#">Senior health</a>
+                        <a class="link" href="#">Optimologist</a>
+                        <a class="link" href="#">Chiropractor</a>
+                    <a class="link" href="#">More➣</a></span>
+                </div>
+        </div>
+            <div class="dropdown">
+            <a class="link" href="pandv.html">Patient and visitor</a>
+            <div class="dropdown-content">
+                <a class="link" href="#">Patient Portal</a>
+                <a class="link" href="#">Pre-register appointments</a>
+                <a class="link" href="#">Urgent Care Online</a>
+                <a class="link" href="#">Telehealth </a>
+                <a class="link" href="#">Consult Professionals</a>
+                <a class="link" href="#">Pharmacies</a>
+                <a class="link" href="#">what you need to know about Covid-19</a>
+                <a class="link" href="#">Visitation Guidelines</a>
+            </div>
+            </div>
+    <div class="dropdown">
+        <a class="link" href="contact.html">Contact us</a>
+        <div class="dropdown-content">
+            <a class="link" href="#">Stay Connected</a>
+            </div></div>
+</div>
+<div>
+    
+</div>
     <div id="slider">
       <ul id="slideWrap"> 
         <li><img class="imgab" src="img1.jpg" alt=""></li>

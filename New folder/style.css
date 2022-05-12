@@ -24,14 +24,19 @@ font-size: 20px;
   width:100%;
 }
   .theoptions{
-      padding-left: 900px;
+      padding-left: 850px;
       margin-top: 10pt;
+      font-weight: 400;
+      display: inline-flex;
+     
   }
   a:link { text-decoration:none;
-  color: black;}
+  color: rgb(0, 0, 0);}
   a:hover { text-decoration-color: red;
   color:red}
-  a{padding-left: 10px;}
+  a{padding-left: 10px;
+  color:black;
+}
   .openBtn {
   background: #f1f1f1;
   border: none;
@@ -100,7 +105,60 @@ margin-left: -8px;
 margin-right: -8px;
 
 }
+/**/
+.dropdown {
+position: relative;
+display: inline-block;
 
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: white;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+background-color: #00548B;
+}
+.dropdown-content a:hover {background-color:rgb(240, 15, 15);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.link{ font-family: 'Montserrat', sans-serif;
+font: size 14px;;}
+/**/
+.dropdown-contentc {
+display: none;
+position: absolute;
+color: white;
+background-color: #00548B;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-contentc a {
+color:white;
+padding: 12px 16px;
+text-decoration: none;
+display: flex;
+text-align: left;
+}
+
+.dropdown-contentc a:hover {background-color: #e21515;}
+
+.dropdownc:hover .dropdown-contentc{
+display:flex;
+}
         /*global sticky options css file*/
         .open-buttongs{
             background-color: goldenrod;

@@ -131,13 +131,37 @@
   display: block;
   background-color: #00548B;
 }
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: rgb(207, 21, 21);}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #e91115;}
 .link{ font-family: 'Montserrat', sans-serif;
 font: size 14px;;}
+/**/
+.dropdown-contentc {
+  display: none;
+  position: absolute;
+  color: white;
+  background-color: #00548B;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-contentc a {
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  text-align: left;
+}
+
+.dropdown-contentc a:hover {background-color: #d42525;}
+
+.dropdownc:hover .dropdown-contentc{
+  display:flex;
+}
         </style>
         <script>
             function openSearch() {
@@ -179,11 +203,7 @@ font: size 14px;;}
                     <a class="link" href="#">Our missions and visons</a>
                     <a class="link" href="#">Why choose us</a>
                   </div></div>
-                  <div class="dropdown">
-                <a class="link" href="contact.html">Contact us</a>
-                <div class="dropdown-content">
-                    <a class="link" href="#">Stay Connected</a>
-                    </div></div>
+                
                     <div class="dropdown">
                 <a class="link" href="docdetail.html">Doctor details</a>
                 <div class="dropdown-content">
@@ -192,10 +212,26 @@ font: size 14px;;}
                     <a class="link" href="#">Consult Professionals</a>
                 </div>
                 </div>
+                <div class="dropdownc">
+                    <a class="link" href="availableservices.html">Treatment and care</a>
+                    <div class="dropdown-contentc">
+                        <span><a class="link" href="#">Cancer</a>
+                        <a class="link" href="#">Maternity</a>
+                        <a class="link" href="#">Heart-related</a>
+                        <a class="link" href="#">Men's health</a></span>
+                       <span><a class="link" href="#">Women's health </a>
+                        <a class="link" href="#">Mental healthcare</a>
+                        <a class="link" href="#">Pediatrician</a>
+                        <a class="link" href="#">Orthopedic</a></span>
+                        <span><a class="link" href="#">Senior health</a>
+                            <a class="link" href="#">Optimologist</a>
+                            <a class="link" href="#">Chiropractor</a>
+                        <a class="link" href="#">More➣</a></span>
+                    </div>
+            </div>
                 <div class="dropdown">
                 <a class="link" href="pandv.html">Patient and visitor</a>
                 <div class="dropdown-content">
-                    <a class="link" href="#"></a>
                     <a class="link" href="#">Patient Portal</a>
                     <a class="link" href="#">Pre-register appointments</a>
                     <a class="link" href="#">Urgent Care Online</a>
@@ -206,12 +242,11 @@ font: size 14px;;}
                     <a class="link" href="#">Visitation Guidelines</a>
                 </div>
                 </div>
-                <div class="dropdown">
-                <a class="link" href="availableservices.html">Treatment and care</a>
-                <div class="dropdown-content">
-                  
-                </div>
-        </div>
+        <div class="dropdown">
+            <a class="link" href="contact.html">Contact us</a>
+            <div class="dropdown-content">
+                <a class="link" href="#">Stay Connected</a>
+                </div></div>
     </div>
     <div>
         
