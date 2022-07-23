@@ -20,11 +20,11 @@ font-size: 20px;
   padding-right: 411pt;
   font-size: large;
   color: azure;
-  background-color: blue;
+  background-color: rgb(255, 0, 0);
   width:100%;
 }
   .theoptions{
-      padding-left: 850px;
+      padding-left: 800px;
       margin-top: 10pt;
       font-weight: 400;
       display: inline-flex;
@@ -288,6 +288,8 @@ display:flex;
 /*announcement boxes*/
     .optional{
         font-size: 18;
+        position: sticky;
+        float:left;
     font-family: 'Montserrat', sans-serif;
     line-height: 2;
     height: 140pt;
@@ -473,3 +475,72 @@ font-weight: 700;
   margin-left: -8px;
   margin-right: -8px;
 }
+/*low sticky*/
+.lowsticky{
+  position:relative;
+  bottom: 0%;
+  padding-right: 1314;
+  margin-left: -9;
+        background-color: #055e9a;
+} 
+.lsa{
+  color:#ddd;
+  font-size: 14;
+}  
+/*number*/          
+.number{
+  margin-top: -100;
+  margin-left: 40;
+  font-size: 36;
+  text-decoration: none;
+}
+.consult{
+  color: #2196F3;
+
+}
+.phone{
+  color: blueviolet;
+  font-size: 26;
+}
+.location{
+  font-size: 26;
+  color: #3a4855;
+}
+.doc{
+  font-size: 26;
+  color: #3a4855;
+}
+.filler{
+  font-size: 22;
+  margin-left: 0;
+}
+.para_boxright{
+  line-height: 2;
+    box-sizing: border-box;
+    color: #3a4855;
+    margin-right:300;
+    width: 100%;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+   margin-bottom:100;
+}
+.container{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2;
+  color: #2B2E30;
+  font-weight: 400;
+  box-sizing: border-box;
+  height:200pt;
+  margin-bottom: 200;
+  }
+  .optionalright{
+    font-size: 18;
+font-family: 'Montserrat', sans-serif;
+line-height: 2;
+height: 140pt;
+width: 600px; ;
+border: 10 solid green;
+background-image:linear-gradient(to right, white,rgb(194, 194, 243));
+box-sizing: border-box;}
