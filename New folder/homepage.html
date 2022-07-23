@@ -13,6 +13,7 @@
                     height: 50pt;
                     width: 180pt;
                     float: left;
+                    padding: 0;
             }
             .topleftsticky{
                 margin-left:900pt;
@@ -162,23 +163,89 @@ font: size 14px;;}
 .dropdownc:hover .dropdown-contentc{
   display:flex;
 }
-        </style>
-        <script>
-            function openSearch() {
-                 document.getElementById("myOverlay").style.display = "block";
-            }
-  
-        function closeSearch() {
-             document.getElementById("myOverlay").style.display = "none";
-         }
-
-        </script>
+.switch {
+                              position: relative;
+                              display: inline-block;
+                              width: 60px;
+                              height: 34px;
+                            }
+                           
+                            .dark-mode {
+                              background-color: black;
+                              color: white;
+                            }
+                            .switch input { 
+                              opacity: 0;
+                              width: 0;
+                              height: 0;
+                            }
+                            
+                            .slider {
+                              position: absolute;
+                              cursor: pointer;
+                              top: 0;
+                              left: 0;
+                              right: 0;
+                              bottom: 0;
+                              background-color: gray;
+                              -webkit-transition: .4s;
+                              transition: .4s;
+                            }
+                            
+                            .slider:before {
+                              position: absolute;
+                              content: "";
+                              height: 26px;
+                              width: 26px;
+                              left: 4px;
+                              bottom: 4px;
+                              background-color: white;
+                              -webkit-transition: .4s;
+                              transition: .4s;
+                            }
+                            
+                            input:checked + .slider {
+                              background-color: gold;
+                            }
+                            
+                            input:focus + .slider {
+                              box-shadow: 0 0 1px #2196F3;
+                            }
+                            
+                            input:checked + .slider:before {
+                              -webkit-transform: translateX(26px);
+                              -ms-transform: translateX(26px);
+                              transform: translateX(26px);
+                            }
+                            
+                            /* Rounded sliders */
+                            .slider.round {
+                              border-radius: 34px;
+                            }
+                            
+                            .slider.round:before {
+                              border-radius: 50%;
+                            }  
+      .lowsticky{
+        position: fixed;
+        bottom: 0%;
+        padding-right: 1314;
+        margin-left: -8;
+              background-color: #055e9a;
+      } 
+      .lsa{
+        color:#ddd;
+        font-size: 14;
+      }  
+                             </style>
+     
+       <script src="script.js"></script>
     </head>
 <body>
     <div class="sticky_header">
         <a class="a0" href="https://covid-19.ebscomedical.com/" target="_blank">COVID-19 Resources and Vaccination Information</a> 
         <div class="sticky">
-            <img src="imgreplace.jpg" class="img_stickyheader">
+          <a href="homepage.html"><img src="logo.png" class="img_stickyheader"></a>
             <div class="topleftsticky">
                 <span class="a1">call us on:01-525011,01-525012 </span>
                 <button class="openBtn" onclick="openSearch()">🔍</button>
@@ -243,7 +310,7 @@ font: size 14px;;}
                 </div>
                 </div>
         <div class="dropdown">
-            <a class="link" href="contact.html">Contact us</a>
+            <a class="link" href="Contactus.html">Contact us</a>
             <div class="dropdown-content">
                 <a class="link" href="#">Stay Connected</a>
                 </div></div>
@@ -251,5 +318,19 @@ font: size 14px;;}
     <div>
         
     </div>
-</body>
+</div></div>
+<div class="lowsticky">
+<label class="lsa">☼</label>
+<label class="switch">
+  <input onclick="myFunction()" type="checkbox">
+  <span class="slider round"></span>
+</label>
+<label class="lsa">☾</label> <br>
+<a class="lsa" href="Contactus.html">Contact</a>
+<a class="lsa" href="about.html">About us</a>
+<a class="lsa" href="about.html">Need help?</a>
+
+<br>
+<p class="lsa">copyright © anon and friends</p>
+</div>
 </html>

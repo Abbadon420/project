@@ -63,13 +63,19 @@ var responsiveSlider = function() {
   
   setInterval(function() {
     nextSlide()
-  }, 10000);
+  }, 30000);
   
   };
   
   window.onload = function() {
   responsiveSlider();  
   }
+  /*dark mode*/
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
+;
  /*extra code*/
 
-  
+                                          
