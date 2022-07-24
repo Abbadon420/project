@@ -1,7 +1,0 @@
-/*dark mode*/
-<label>☼</label>
-<label class="switch">
-  <input onclick="myFunction()" type="checkbox">
-  <span class="slider round"></span>
-</label>
-<label>☾</label>
